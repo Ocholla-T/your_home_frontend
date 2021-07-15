@@ -1,7 +1,7 @@
 <template>
   <div class="grid justify-center">
-    <form action="" class="max-w-2xl mt-10" @submit.prevent="addDevice">
-      <p class="text-center font-bold text-lg">Your Home</p>
+    <form action="" class="min-w-full w-72 mt-10" @submit.prevent="addDevice">
+      <p class="title text-center font-bold text-2xl my-4">Your Home</p>
 
       <!-- DEVICE -->
       <label for="name" class="my-2 block text-sm font-medium text-gray-700">Device</label>
@@ -107,4 +107,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+p {
+  font-family: 'Architects Daughter', cursive;
+}
+</style>
